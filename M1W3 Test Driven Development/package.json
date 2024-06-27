@@ -1,0 +1,20 @@
+{
+  "name": "m1w3-test-driven-development",
+  "version": "1.0.0",
+  "description": "Testing some code with our testing library",
+  "main": "sayhello.js",
+  "scripts": {
+    "whatever": "./node_modules/mocha/bin/mocha.js",
+    "start": "node sayhello.js"
+  },
+  "keywords": [
+    "testing",
+    "Javascript",
+    "TDD"
+  ],
+  "author": "Alvin NG",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.5.1"
+  }
+}
