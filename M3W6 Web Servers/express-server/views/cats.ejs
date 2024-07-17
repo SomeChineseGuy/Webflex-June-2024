@@ -1,0 +1,45 @@
+<h1>Welcome to my Cats Page! Something new!</h1>
+<h2>Something else in here!</h2>
+
+<!-- Tags that SHOW content -->
+<p>Something</p>
+<h1>Something</h1>
+<h2>Something</h2>
+<h6>Something</h6>
+
+<!-- Tags that organize content -->
+<div>Something</div>
+<section>Something</section>
+<main>Something</main>
+<aside>Something</aside>
+
+<!-- EJS special tags -->
+<!-- <% %> This runs JS logic -->
+<% %>
+<!-- <%= %> Displays values that you placed in the object -->
+
+<% for(let item in catsDatabase) { %>
+  <img src="<%= catsDatabase[item] %>" alt="">
+<% } %>
+
+<% for(let num of arr) { %>
+  <p><%= num %></p>
+<% } %>
+
+<%= arr[2] %>
+
+<% if(usersDB.user1 === "Alvin")  { %>
+  <h1> Hello  <%= usersDB.user1 %></h1>
+<%}%>
+
+<!-- <p> catsDatabase.one</p>
+<p> catsDatabase.two</p>
+<p> catsDatabase.three</p>
+<p> catsDatabase.four</p>
+
+<p>one</p>
+<p>two</p>
+<p>three</p>
+<p>four</p> -->
+
+<% console.log("Hello") %>
