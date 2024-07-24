@@ -35,11 +35,6 @@ function randomString(length, chars) {
 
 app.get('/', (req, res) => {
   const lang = req.cookies.lang;
-
-  const arr = [] || "";
-  if (!!arr) {
-    
-  }
   const templateVars = {
     heading: langauge.homeHeadings[lang] || langauge.homeHeadings.en,
     body: langauge.homeBodies[lang] || langauge.homeBodies.en
