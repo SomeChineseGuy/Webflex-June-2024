@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello! Welcome to the homepage!</h1>
+  <h1><%= heading %></h1>
+  <p><%= body %></p>
+  <div>
+    <a href="/langauges/en">en</a>
+    <a href="/langauges/fr">fr</a>
+    <a href="/langauges/ja">ja</a>
+    <a href="/langauges/ko">ko</a>
+    <a href="/langauges/es">es</a>
+  </div>
+
+  <a href="/about">About</a>
+
+
+  <div>
+    <h2><a href="/login">login</a></h2>
+    <h2><a href="/register">register</a></h2>
+    <h2><a href="/protected">protected</a></h2>
+  </div>
+  <form action="/logout" method="POST">
+    <button type="submit">Logout</button>
+  </form>
+</body>
+</html>
