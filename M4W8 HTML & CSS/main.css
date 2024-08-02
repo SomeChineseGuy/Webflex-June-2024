@@ -1,0 +1,20 @@
+/* This is targetting a tag */
+/* h1 {
+  font-size: 100px;
+  color: green;
+  text-decoration: underline;
+  font-weight: 100;
+} */
+
+/* Target a class attr in HTML */
+.title {
+  font-size: 10px;
+  color: red;
+  text-decoration: line-through;
+}
+
+/* Target id attr HTML */
+#title {
+  color: yellow;
+  font-size: 50px;
+}

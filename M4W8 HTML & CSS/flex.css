@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+}
+
+/* What's better margin or padding? */
+/* Padding is correct 66% */
+/* Navbar */
+#navbar {
+  background-color: #34495e;
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 30px; */
+  /* padding-top: 30px; */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* .navbar {
+  background-color: blue;
+} */
+
+.nav-left,
+.nav-right  {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: rgba(255, 255, 255, 0.55);
+  align-items: center;
+}
+
+.navbar div {
+  
+}
+
+#pink {
+  color: pink;
+}
+
+.blue {
+  color: blue !important;
+}
+
+.green {
+  color: green;
+}
+
+
+
+
+
+
+
+.cat-image {
+  background-color: pink;
+  /* 4 values in the box model */
+  /* First value controls the "size of the item" */
+  /* With height and width, you sometimes only need one of them not both */
+  width: 500px;
+  /* height: 100px; */
+  /* Increase the size of the clickable space without increasing the size of the image. Basically give my image more space without increasing size */
+  padding: 50px 50px 50px 50px;
+  /* Border around the item, controls the shape of the item */
+  border: 10px solid blue;
+  border-radius: 50%;
+  /* Margin controls the white space around the item */
+  margin: 200px 20px 20px 200px;
+  
+
+}
+
+.box {
+  padding: 30px;
+  display: flex;
+  border: 1px solid green;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+.large-box-one {
+  background-color: tomato;
+}
+
+.large-box-two {
+  background-color: aqua;
+}
+
+.flexbox {
+  display: flex;
+  /* align-items: flex-start;
+  justify-content: center; */
+  height: 1000px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.large-box-three {
+  background-color: red;
+}
+
