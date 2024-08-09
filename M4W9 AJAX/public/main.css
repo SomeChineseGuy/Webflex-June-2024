@@ -1,0 +1,42 @@
+body {
+  background-color: aqua;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-one  {
+  background-color: tomato;
+}
+
+.box-one:hover {
+  color: white;
+  background-color: blue;
+}
+
+.box-two  {
+  background-color: purple;
+}
+
+.box-three  {
+  background-color: green;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.dog-form {
+  padding: 20px;
+  padding-top: 50px;
+}
