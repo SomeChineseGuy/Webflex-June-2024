@@ -1,0 +1,24 @@
+// See: https://sass-lang.com/
+
+body,
+html {
+  margin: 0;
+}
+
+$brand-color: white;
+
+h1 {
+  color: $brand-color
+}
+
+nav {
+  background-color: black;
+
+  .mobile-container {
+    color: white;
+
+    h3 {
+      font-size: 100px;
+    }
+  }
+}
