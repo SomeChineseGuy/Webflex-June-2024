@@ -1,0 +1,63 @@
+<%- include('partials/_header') -%>
+<body>
+	<%- include('partials/_nav')-%>
+		<h2>SQL from Our Apps</h2>
+		<form action="/query" method="POST" style="padding-left: 20px;">
+			<input type="text" name="query">
+			<select name="species" id="">
+				<option value="Cat">Cat</option>
+				<option value="Dog">Dog</option>
+				<option value="Rabbit">Rabbit</option>
+
+			</select>
+			<button type="submit">Search</button>
+		</form>
+
+		<h1>Add more pets</h1>
+		<form action="/add/pets" method="POST">
+			<label for="name">Name</label>
+			<input type="text" name="name">
+			<br>
+			<label for="species">Species</label>
+			<select name="species" id="">
+				<option value="Cat">Cat</option>
+				<option value="Dog">Dog</option>
+				<option value="Rabbit">Rabbit</option>
+			</select>
+			<br>
+			<label for="breed">Breed</label>
+			<input type="text" name="breed" id="">
+			<br>
+			<label for="sex">Sex</label>
+			<select name="sex" id="">
+				<option value="M">M</option>
+				<option value="F">F</option>
+			</select>
+			<br>
+			<label for="user_id">User ID</label>
+			<input type="number" name="user_id" id="">
+			<br>
+			<label for="age">Age</label>
+			<input type="number" name="age" id="">
+			<br>
+			<button type="submit">Add</button>
+		</form>
+
+		<h1>Delete Pet from DB</h1>
+		<form action="/delete/pets" method="POST">
+			<label for="name">Name</label>
+			<input type="text" name="name" id="">
+			<button>Delete</button>
+		</form>
+
+		<ul class="results">
+			<% if(resp) { %>
+				<% for (let user of resp.rows) { %>
+					<li><%= user.name %> || <%= user.species %> || <%= user.breed %> || <%= user.sex %>  </li>
+				<% } %>
+			<% } %>
+		</ul>
+		<button class="jquery-fetch">Fetch With jQuery Users</button>
+		<section class="user-results"></section>
+</body>
+<%- include('partials/_footer')-%>
