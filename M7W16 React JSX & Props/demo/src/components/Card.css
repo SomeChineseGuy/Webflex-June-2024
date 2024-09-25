@@ -1,0 +1,26 @@
+.card {
+  border: 1px solid black;
+  max-width: 300px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.card-container {
+  padding: 1rem;
+}
+
+.card-button {
+  background-color: lightblue;
+  border: none;
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+}
+
+.broken {
+  background-color: red;
+}
+
+.loading {
+  background-color: yellow;
+}
